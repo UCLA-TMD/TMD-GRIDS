@@ -2,8 +2,10 @@
 
 Release page for TMDs from UCLA-TMD group. 
 
-For questions and feedback please contact
+## Authors
 
-John Terry (UCLA) johndterry@physics.ucla.edu
+Daniel Callos (UCLA) dcallos@g.ucla.edu
 
 Zhongbo Kang (UCLA) zkang@physics.ucla.edu
+
+John Terry (UCLA) johndterry@physics.ucla.edu
