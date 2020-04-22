@@ -1,4 +1,3 @@
-
 ********************************************************************
 *                                                                  *
 *    CKT Polarizing Fragmentation Functions for Lambda Baryons     *
@@ -8,10 +7,7 @@
 *                                                                  *
 *  INPUT:                                                          *
 *   x  = hadron momentum fraction (between  0.2    and  0.6 )      *
-*   Q  = scale in GeV    (between  2.24   and  22.4)               *
-*        (for values outside the allowed range the program         *
-*         writes a warning and extrapolates to the x and           *
-*         Q values requested)                                      *
+*   Q  = scale in GeV             (between  2.24   and  22.4)      *
 *                                                                  *
 *  OUTPUT:                                                         *
 *                    U, UB, D, DB, S, SB                           *
@@ -181,6 +177,45 @@ C          STOP
 
       return
       end
+
+********************************************************************
+*              CALL TMDPFF(x,Q,kT,u,ub,d,db,s,sb)                  *
+*                                                                  *
+*  INPUT:                                                          *
+*   x  = hadron momentum fraction (between  0.2    and  0.6 )      *
+*   Q  = scale in GeV             (between  2.24   and  22.4)      *
+*   pT = Transverse momentum of hadron relative to quark           *
+*                                                                  *
+*  OUTPUT:                                                         *
+*                    U, UB, D, DB, S, SB                           *
+*      The fragmentation functions to Lambda baryons               *
+*                                                                  *
+********************************************************************
+
+      subroutine TMDPFF(x,Q,pT,u,ub,d,db,s,sb)
+      implicit none
+      real*8 x,Q,pT
+      real*8 u ,ub ,d ,db ,s ,sb 
+      real*8 uc,ubc,dc,dbc,sc,sbc
+      real*8 MD2,pTdep,pi
+
+      pi = 4d0*atan(1d0)
+      MD2 = 0.118d0
+
+      call PFFCKT(x,Q,uc,ubc,dc,dbc,sc,sbc)
+
+      pTdep = dexp(-pT*pT/MD2)/pi/MD2
+
+      u = uc *pTdep
+      d = dc *pTdep
+      s = sc *pTdep
+      ub= ubc*pTdep
+      db= dbc*pTdep
+      sb= sbc*pTdep
+
+      return
+      end
+
 
 c---------------------------------------------------------------
 
