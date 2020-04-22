@@ -6,6 +6,6 @@ Lambda Polarizing Fragmentation Function from "Extracting the Transverse Momentu
 
 Daniel Callos (UCLA) dcallos@g.ucla.edu
 
-Zhongbo Kang (UCLA) zkang@physics.ucla.edu
+Zhong-bo Kang (UCLA) zkang@physics.ucla.edu
 
 John Terry (UCLA) johndterry@physics.ucla.edu
