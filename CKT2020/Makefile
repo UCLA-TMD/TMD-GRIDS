@@ -12,3 +12,4 @@ clean:
 	-rm *.out
 	-rm *.o
 	-rm *.pdf
+	-rm *.dat
