@@ -179,7 +179,7 @@ C          STOP
       end
 
 ********************************************************************
-*              CALL TMDPFF(x,Q,kT,u,ub,d,db,s,sb)                  *
+*              CALL TMDPFF(x,Q,pT,u,ub,d,db,s,sb)                  *
 *                                                                  *
 *  INPUT:                                                          *
 *   x  = hadron momentum fraction (between  0.2    and  0.6 )      *
