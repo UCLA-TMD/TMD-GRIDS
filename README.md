@@ -2,7 +2,7 @@
 
 Release page for TMDs from UCLA-TMD group. 
 
-## Authors
+## Authors for CKT2020
 
 Daniel Callos (UCLA) dcallos@g.ucla.edu
 
