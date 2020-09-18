@@ -1,6 +1,6 @@
 # EKT2020
 
-To be added.
+To be added upon publication.
 
 ## Authors
 
