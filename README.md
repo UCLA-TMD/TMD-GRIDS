@@ -2,7 +2,7 @@
 
 Release page for TMDs from UCLA-TMD group. 
 
-## Authors
+## Authors for EKT2020
 
 Miguel Echevarria (Universidad de Alcala) m.garciae@uah.es
 
