@@ -1,6 +1,6 @@
-# TMD-GRIDS
+# CKT2020
 
-Release page for TMDs from UCLA-TMD group. 
+Lambda Polarizing Fragmentation Function from "Extracting the Transverse Momentum Dependent Polarizing Fragmentation Functions" https://inspirehep.net/literature/1784802.
 
 ## Authors for CKT2020
 
