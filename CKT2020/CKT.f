@@ -1,29 +1,30 @@
-********************************************************************
-*                                                                  *
-*    CKT Polarizing Fragmentation Functions for Lambda Baryons     *
-*           D.Callos, Z.Kang, J.Terry   (arXiv 2003.04828)         *
-*                                                                  *
-*              CALL PFFCKT(x,Q,u,ub,d,db,s,sb)                     *
-*                                                                  *
-*  INPUT:                                                          *
-*   x  = hadron momentum fraction (between  0.2    and  0.6 )      *
-*   Q  = scale in GeV             (between  2.24   and  22.4)      *
-*                                                                  *
-*  OUTPUT:                                                         *
-*                    U, UB, D, DB, S, SB                           *
-*      The fragmentation functions to Lambda baryons               *
-*                                                                  *
-*   LAMBDABAR:                                                     *
-*      For anti-Lambda production use                              *
-*              CALL PFFCKT(x,Q,ub,u,db,d,sb,s)                     *
-*                                                                  *
-*                                                                  *
-*   COMMON:  The main program or the calling routine has to have   *
-*      a common block  COMMON / PFFRAGINI / PFFINI, and  PFFINI    *
-*      has always to be zero when CKT is called for the            *
-*      first time or when the SET has been changed.                *
-*                                                                  *
-********************************************************************
+
+*********************************************************************
+*                                                                   *
+*    CKT Polarizing Fragmentation Functions for Lambda Baryons      *
+*           D.Callos, Z.Kang, J.Terry   (arXiv 2003.04828)          *
+*                                                                   *
+*              CALL PFFCKT(x,Q,u,ub,d,db,s,sb)                      *
+*                                                                   *
+*  INPUT:                                                           *
+*   x  = hadron momentum fraction (between  0.2     and  0.6 )      *
+*   Q  = scale in GeV             (between  sqrt(5) and  sqrt(500)) *
+*                                                                   *
+*  OUTPUT:                                                          *
+*                    U, UB, D, DB, S, SB                            *
+*      The fragmentation functions to Lambda baryons                *
+*                                                                   *
+*   LAMBDABAR:                                                      *
+*      For anti-Lambda production use                               *
+*              CALL PFFCKT(x,Q,ub,u,db,d,sb,s)                      *
+*                                                                   *
+*                                                                   *
+*   COMMON:  The main program or the calling routine has to have    *
+*      a common block  COMMON / PFFRAGINI / PFFINI, and  PFFINI     *
+*      has always to be zero when CKT is called for the             *
+*      first time or when the SET has been changed.                 *
+*                                                                   *
+*********************************************************************
 
       subroutine PFFCKT(x,Q,u,ub,d,db,s,sb)
       implicit none
