@@ -14,6 +14,4 @@ John Terry (UCLA) johndterry@physics.ucla.edu
 
 EKT2020: Fit to the Sivers function at NLO+NNLL.
 
-To obtain this grid, issue the command
-
-git clone -b EKT2020 https://github.com/UCLA-TMD/TMD-GRIDS.git
+Grids will be released upon publication.
